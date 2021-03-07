@@ -2,6 +2,10 @@
 Visualize your language and editor data from [wakatime](https://wakatime.com/).
 
 ## Usage
+```sh
+./wakatime_visualize.sh <input(json)>"
+```
+Where the `.json` file is the file you download from your wakatime account, in Settings > Export.
 
 ## Installation
 ```sh
