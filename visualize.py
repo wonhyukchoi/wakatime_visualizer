@@ -61,7 +61,7 @@ def plot_results(df):
     for i in range(len(df.columns) - 1):
         plt.plot(df['DATE'], df.iloc[:,i], label=df.columns[i])
     plt.xlabel("Date")
-    plt.ylabel("Week-avg Hours")
+    plt.ylabel("Hours spent (7-day avg)")
     plt.legend()
     plt.show()
 
