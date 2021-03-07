@@ -65,6 +65,7 @@ def plot_results(df):
     plt.legend()
     plt.show()
 
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         raise Exception("USAGE: python visualize.py <input(csv)>")

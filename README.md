@@ -1,6 +1,11 @@
 # Wakatime Visualizer
 Visualize your language and editor data from [wakatime](https://wakatime.com/).
 
+![](.github/editor.svg)
+
+![](.github/lang.svg)
+
+
 ## Usage
 ```sh
 ./wakatime_visualize.sh <input(json)>"
@@ -21,3 +26,7 @@ pip install wakadump
 * Q: Why is this not in `requirements.txt`?
 * A: `Wakadump` has outdated dependencies, and if you are using Python 3.9+, it is likely to break your dependencies.
     Manual installation and version fixing is recommended.
+
+## TODO
+* Allow the number of results to be an argument.
+* Export the result to HTML or some nice format.

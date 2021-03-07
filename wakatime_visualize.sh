@@ -7,6 +7,7 @@ fi
 input_name=$1
 temp_csv="temp_csv.csv"
 
-output_name | wakadump --input input_name --output csv
+echo $temp_csv | wakadump --input $input_name --output csv
 
-python3 visualize.py temp_csv
+python3 visualize.py $temp_csv
+rm $temp_csv

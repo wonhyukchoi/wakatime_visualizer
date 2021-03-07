@@ -1,6 +1,7 @@
 # Local files
 *.csv
 *.json
+*.pmdx
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
