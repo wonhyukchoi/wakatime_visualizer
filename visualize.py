@@ -65,11 +65,17 @@ def plot_results(df):
     plt.legend()
     plt.show()
 
+def gross_total(original_df):
+    lang_df, _ = produce_df(-1, original_df)
+    times = lang_df.sum(axis=1)
+    return pd.DataFrame(data=dict(total=times, DATE=lang_df[lang_df.columns[-1]]))
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         raise Exception("USAGE: python visualize.py <input(csv)>")
     waka_data = pd.read_csv(sys.argv[1])
+    plot_results(gross_total(waka_data))
+
     languages, editors = produce_df(TOP_N, waka_data)
     plot_results(languages)
     plot_results(editors)

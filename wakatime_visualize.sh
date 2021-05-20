@@ -10,4 +10,4 @@ temp_csv="temp_csv.csv"
 echo $temp_csv | wakadump --input $input_name --output csv
 
 python3 visualize.py $temp_csv
-rm $temp_csv
+#rm $temp_csv
