@@ -15,18 +15,11 @@ Where the `.json` file is the file you download from your wakatime account, in S
 ## Installation
 ```sh
 pip install -r requirements.txt
+chmod +x wakatime_visualize.sh
 ```
 Any version of Python 3.x will work.
 
 ### Wakadump
-You also need [wakadump](https://github.com/wakatime/wakadump), which is installable with
-```sh
-pip install wakadump
-```
-* Q: Why is this not in `requirements.txt`?
-* A: `Wakadump` has outdated dependencies, and if you are using Python 3.9+, it is likely to break your dependencies.
-    Manual installation and version fixing is recommended.
+**Warning!**
 
-## TODO
-* Allow the number of results to be an argument.
-* Export the result to HTML or some nice format.
+[Wakadump](https://github.com/wakatime/wakadump) has outdated dependencies, and if you are using Python 3.9+, it may break your dependencies.
